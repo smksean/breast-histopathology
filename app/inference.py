@@ -7,7 +7,7 @@ class BreastHistoModel:
     def __init__(self, model_path, class_names):
         self.class_names = class_names
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        self.model = torch.load(model_path, map_location=self.device)
+        self.model = torch.load(model_path, map_location=self.device, weights_only=False)  # Fix for PyTorch 2.6+
         self.model.eval()
 
         # Same transforms used in test_inference.py
