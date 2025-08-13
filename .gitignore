@@ -1,0 +1,25 @@
+# venv
+.venv/
+__pycache__/
+*.pyc
+
+# vscode
+.vscode/
+
+# models / big binaries
+models/*.pt
+models/*.pth
+
+# os junk
+.DS_Store
+Thumbs.db
+# Ignore images folder
+images/
+*.png
+*.jpg
+*.jpeg
+
+# Ignore model cache files
+__pycache__/
+*.pyc
+
