@@ -1,0 +1,30 @@
+# Ignore Python cache & venv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+.venv/
+env/
+venv/
+
+# Ignore local dev files
+*.log
+*.DS_Store
+.vscode/
+.idea/
+
+# Ignore git
+.git/
+.gitignore
+
+# Ignore Docker itself
+Dockerfile
+docker-compose.yml
+
+# Ignore data not needed in container
+notebooks/
+tests/
+*.ipynb
+images/
+

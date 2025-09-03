@@ -1,0 +1,45 @@
+# Let's create a text document containing the previous Git commands plus the Git LFS steps for handling the model file.
+
+git_steps_with_lfs = """
+# Steps to Push Project to GitHub Without Images
+
+# 1. Initialize Git repository (only if you haven't already)
+git init
+
+# 2. Create a .gitignore file to exclude images
+# Add this to .gitignore file:
+images/
+__pycache__/
+*.pyc
+
+# 3. Stage and commit everything except images
+git add .
+git commit -m "Initial commit without images"
+
+# 4. Add remote GitHub repository
+git remote add origin https://github.com/USERNAME/REPO_NAME.git
+
+# 5. Push to GitHub
+git branch -M main
+git push -u origin main
+
+------------------------------------------------------------
+# Steps to Add Model with Git LFS
+
+# 1. Install Git LFS (only once on your system)
+git lfs install
+
+# 2. Track .pt files with Git LFS
+git lfs track "*.pt"
+
+# 3. Commit the LFS tracking configuration
+git add .gitattributes
+git commit -m "Track PyTorch model files with Git LFS"
+
+# 4. Add your model file
+git add models/resnet50_bh_e1_ts_probs.pt
+git commit -m "Add model file via Git LFS"
+
+# 5. Push changes to GitHub
+git push origin main
+"""

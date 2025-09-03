@@ -1,0 +1,35 @@
+# Ignore Streamlit app
+app.py
+
+# Ignore test scripts
+test_api.py
+
+# Ignore sample images
+images/
+*.jpg
+*.jpeg
+*.png
+
+# Ignore virtual environment
+.venv/
+venv/
+env/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter notebooks
+*.ipynb
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules (if you later add React in same repo)
+node_modules/
+build/
+
+
